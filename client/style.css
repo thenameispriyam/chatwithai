@@ -49,20 +49,31 @@ body {
   padding: 15px;
 }
 
+#tag {
+  font-family: cursive;
+  color: #b6b6b68d;
+}
+
 .myPhoto {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  background-color: #01071f48;
+  border-radius: 0 0 10px 10px;
+
   float: left;
 }
 @media screen and (max-width:800px){
-  .myPhoto {
-    display: none;
+  #myPhoto {
+    width: 20px;
+    height: 20px;
   }
 }
 
 #myPhoto {
   border-radius: 50%;
-  width: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .ai {

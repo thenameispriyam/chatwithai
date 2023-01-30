@@ -41,13 +41,6 @@ function generateUniqueId() {
 function chatStripe(isAi, value, uniqueId) {
   return `
       <div class="wrapper ${isAi && "ai"}">
-        <div class="myPhoto">
-          <img
-            src="./assets/priyam.jpeg"
-            alt="Priyam"
-            id="myPhoto"
-          />
-        </div>
         <div class="chat">
           <div class="profile">
             <img
@@ -84,7 +77,7 @@ const handleSubmit = async (e) => {
   // fetching data from server
   // i.e. response from AI bot's side
 
-  const response = await fetch("http://localhost:5000", {
+  const response = await fetch("https://chatwithai-xhwv.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
